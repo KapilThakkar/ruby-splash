@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day View - Day Planner App</title>
+    <!-- Modal -->
+    <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close">×</button>
+            <h4 class="modal-title">Add New Engagement</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title-name" class="form-control-label">Title:</label>
+                <input id="title-name" type="text" placeholder="Title" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="location-text" class="form-control-label">Location:</label>
+                <input id="location" type="text" placeholder="Enter a location" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="meetingdate-name" class="form-control-label">Meeting Date:</label>
+                <div data-date="" data-date-format="dd MM yyyy" data-link-field="meetingdate-name" data-link-format="yyyy-mm-dd" class="input-group date form_date col-md-12">
+                  <input size="16" type="text" value="" readonly="" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+                <input id="meetingdate-name" type="hidden" value="">
+              </div>
+              <div class="form-group">
+                <label for="starttime-name" class="form-control-label">Start Time:</label>
+                <div data-date="" data-date-format="hh:ii" data-link-field="starttime-name" data-link-format="hh:ii" class="input-group date form_time col-md-12">
+                  <input size="16" type="text" value="" readonly="" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                </div>
+                <input id="starttime-name" type="hidden" value="">
+              </div>
+              <div class="form-group">
+                <label for="endtime-name" class="form-control-label">End Time:</label>
+                <div data-date="" data-date-format="hh:ii" data-link-field="endtime-name" data-link-format="hh:ii" class="input-group date form_time col-md-12">
+                  <input size="16" type="text" value="" readonly="" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                </div>
+                <input id="endtime-name" type="hidden" value="">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="closeengagement" type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button id="saveengagement" type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
